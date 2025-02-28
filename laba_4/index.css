@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: grid;
+}
+.line
+{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 10%;
+}
+.mainText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+body
+{
+    font-family: "DM Sans", sans-serif;
+}
+header
+{
+    background-color: white;
+    display: flex;
+}
+main
+{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(styles/vivid-blurred-colorful-wallpaper-background.jpg);
+}
+.material-symbols-outlined
+{
+    cursor: pointer;
+}
+input[type="search"]::-webkit-search-cancel-button
+ {
+    display: none;
+  }
+.search
+{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid black;
+}
+.search-input
+{
+    border: none;
+    outline: none;
+}
+input
+{
+font-size: 20px;
+}
+.picture img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+.mainButtons
+{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2b9f3;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 35px;
+    justify-self: flex-end;
+}
+.picture
+{
+    width: 20%;
+    height: 20%;
+}
+.buttonText
+{
+    font-size: calc(1vh + 0.5vw);
+    text-align: center;
+    vertical-align: middle;
+}
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.underMottoText
+{
+    color: white;
+    text-align: center;
+    font-size: calc(1vh + 0.45vw);
+
+}
+
+.divText
+{
+    font-size: calc(0.8vh + 0.5vw);
+    font-style: italic;
+    color: #868686;
+}
+
+.mainMotto
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: calc(3vh + 1.4vw);
+}
+.leftBlock, .middleBlock, .rightBlock
+{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+.footerMainText
+{
+    text-align: center;
+    font-size: calc(0.9vh + 0.5vw);
+    color: white;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+a{
+    color: rgb(189, 189, 189);
+}
+.logo
+{
+    color: rgb(128, 126, 126);
+    font-size: calc(1.7vh + 1vw);
+    width: 20%;
+}
+
+@media screen and (min-width: 769px) {
+    
+header{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7vh;
+}
+main
+{
+    height: 83vh;
+    padding-top: 4.2vh;
+    padding-bottom: 6.2vh;
+    padding-left: 18vw;
+    padding-right: 18vw;
+    flex-direction: column;
+}
+
+.mainText{
+    min-height: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+.mainSections
+{
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    min-height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 2%;
+}
+.footerMainBlock
+{
+    height: 5%;
+}
+.leftBlock, .middleBlock, .rightBlock
+{
+    justify-content: center;
+    padding: 1.5%;
+    min-height: 100%;
+    width: 30%;
+    border-radius: 35px;
+}
+.divText
+{
+    height: 45%;
+    overflow: hidden;
+}
+@media screen and (max-width: 1108px) 
+{
+
+    .leftBlock, .middleBlock, .rightBlock
+    {
+        border-radius: 20px;
+    }
+}
+
+nav > ul
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3vw;
+    
+}
+li{
+    box-sizing: border-box;
+    font-size: calc(1.2vh + 0.5vw);
+}
+footer
+{
+    min-height: 10vh;
+}
+h3{
+    font-size: calc(1vh + 1vw);
+}
+.menu{
+    display: grid;
+}
+
+.line
+{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 10%;
+}
+.mainButtons
+{
+    height: 15%;
+    width: 30%;
+    border-radius: 40px; 
+}
+
+button:hover {
+    border-radius: 60px; 
+    background-color: #f0f0f0;
+}
+}
+@media screen and (max-width: 768px)
+{
+    h3{
+        font-size: calc(2vh + 1vw);
+    }
+    .divText
+    {
+    font-size: calc(1.5vh + 0.5vw);
+    }
+    .menu
+    {
+        padding-top: 5px;
+        height: 30px;
+        width: 35px;
+        align-self: center;
+    }
+
+    #search-input {
+        padding: 10px; 
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+    header
+    {
+        padding-top: 2vh;
+        width: 100%;
+        display: flex;
+        min-height: 8vh;
+        row-gap: 1vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 2vh;
+        justify-content: space-between;
+        align-items: center;
+        
+    }  
+
+    body{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }  
+    main{
+        padding-top: 3vh;
+        padding-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainSections
+    {
+    padding-top: 4vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2.5vh;
+    }
+    .leftBlock, .middleBlock, .rightBlock
+    {
+        height: auto;
+        padding: 2.5%;
+        border-radius: 35px;
+    }
+    .mainButtons
+    {
+        width: 15vw;
+    }
+    .buttonText
+    {
+        font-size: calc(1.5vh + 0.5vw);
+        text-align: center;
+        vertical-align: middle;
+    }
+    ul{
+        display: none;
+    }
+    footer
+    {
+        min-height: 6vh;
+    }
+    .logo
+    {
+        font-size: 3vh;
+    }
+    .footerMainText
+    {
+        font-size: calc(1vh + 0.5vw);
+    }
+}
