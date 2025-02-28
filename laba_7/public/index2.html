@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View JSON</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        fetch('/server/load.php')
+            .then(response => response.json())
+            .then(data => {
+                const output = document.getElementById('output');
+                if (data.status === 'error') {
+                    output.textContent = data.message;
+                } else {
+                    output.textContent = JSON.stringify(data, null, 2);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
