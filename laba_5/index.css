@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.block1
+{
+    background-color: aqua;
+}
+.mainMottoHeader
+{
+    width: 50%;
+}
+
+.block7
+{
+    background-color: aqua;
+    
+}
+.block2, .block3, .block5, .block6
+{
+    background-color:  rgb(246, 248, 92);
+}
+.block4
+{
+    background-color: rgb(245, 210, 54);
+}
+a{
+    color: black;
+}
+td
+{
+    border:  1px solid black;
+}
+.square
+{
+    font-size: calc(1vh + 0.5vw);
+    text-align: center;
+}
+.InputForm
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    padding: 5%;
+    width: 80%;
+    row-gap: 20px;
+    height: auto;
+    justify-content: center;
+    user-select: none;
+}
+
+.taskButton
+{
+    display: block;
+    font-size: 0.6em;
+    justify-self: center;
+    width: 50%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    background-color: aqua;
+}
+.task5Button
+{
+    display: block;
+    font-size: 1em;
+    justify-self: center;
+    width: 6%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    background-color: rgb(246, 248, 92); 
+}
+button:hover
+{
+    
+    background-color: white;
+}
+@media screen and (min-width: 900px)
+{
+    .InputForm
+    {
+        align-self: flex-start;
+    }
+.headerText
+{
+    text-align: end;
+    width: 70%;
+    font-size: 1em;
+}
+.container
+{
+    column-gap: 5%;
+    display: grid;
+    grid-template-rows: auto auto repeat(6, 1fr) auto;
+    grid-template-columns: 1fr 1fr 0.7fr 0.7fr;
+    min-height: 100vh;
+}
+body
+{
+    font-size: calc(1vh + 0.5vw);
+}
+.block
+{
+    padding: 2%;
+
+}
+.block1
+{
+    padding: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+    min-height: 10vh;
+    grid-area: 1/1/1/5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block7
+{
+    overflow-x:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: 9/1/9/5;
+    min-height: 10vh;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.mainMotto
+{
+    grid-area: 1/3/1/3;
+    justify-self: flex-end;
+}
+
+.block2
+{
+    grid-area: 2/1/9/1;
+}
+.block3
+{
+    padding: 0;
+    grid-area: 2/2/9/2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-width: 40%;
+}
+.block4
+{
+    grid-area: 2/3/2/5;
+    background-color: rgb(245, 210, 54);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.block5
+{
+    grid-area: 3/3/9/3;
+}
+.block6
+{
+    grid-area: 3/4/9/4;
+}
+
+.block2, .block3, .block5, .block6
+{
+    background-color:  rgb(246, 248, 92);
+}
+.block5, .block6, .block2
+{
+    display: grid;
+    justify-items: center;
+    grid-template-rows: auto 1fr;
+    font-size: 1.3em;
+}
+.block5, .block6
+{
+    padding: 9%;
+}
+.block5Text
+{
+    align-items: center;
+}
+.history_facts, .health_facts
+{
+    text-align: center;
+}
+.inputNumber
+{
+    width: 100%;
+    height: auto;
+    font-size: 0.6em;
+}
+ol
+{
+    padding: 0%;
+    margin: 0%;
+}
+.block2
+{
+    align-items: center;
+}
+h2{
+    font-size: 2em;
+}
+div > h3
+{
+    grid-area: 1/1/1/1;
+}
+div > ol{
+    grid-area: 2/1/2/1 
+}
+nav > ul > li
+{
+margin: 14px;
+}
+nav{
+    font-size: 1.5em;
+    padding-bottom: 10%;
+}
+ol
+{
+    width: 100%;
+    height: 60%;
+    font-size: 0.8em;
+}
+
+li{
+    margin: 3%
+}
+}
+@media screen and (max-width: 899px)
+{
+    .container
+    {
+        display: grid;
+        grid-template-rows: repeat(auto, 6);
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4%;
+    }
+    .block2
+    {
+        grid-area: 5/1/5/3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav > ul > li{
+        font-size: 15px;
+    }
+    .block1
+    {
+        grid-area: 1/1/1/3;
+        display: grid;
+        min-height: 75px;
+        align-items: center;
+        justify-content: center;
+    }
+    .block4
+    {
+        grid-area: 2/1/2/3;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .block5
+    {
+        padding: 8%;
+        grid-area: 3/1/3/1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .block6
+    {
+        grid-area: 3/2/3/2;
+        display: grid;
+        justify-items: center;
+        padding: 8%;
+    }
+    .block3
+    {
+         grid-area: 4/1/4/3;
+         margin-top: 1%;
+         margin-bottom: 1%;
+    }
+    .task5Button
+    {
+        width: 15%;
+    }
+    .block7
+    {
+        overflow-x:auto;
+        grid-area: 6/1/6/3;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2%;
+        padding-right: 2%;
+        min-height: 7vh;
+    }
+    h3
+    {
+        text-align: center;
+        margin-bottom: 4%;
+    }
+    li{
+        margin: 14px;
+    }
+    .mainMotto
+    {
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
